@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
+
+:root {
+  --ink: #15283e;
+  --blue: #123a6b;
+  --red: #bd3c2d;
+  --gold: #f0b72f;
+  --paper: #fbf9f3;
+  --muted: #696b6e;
+  --line: #dedbd2;
+  --sans: 'DM Sans', sans-serif;
+  --display: 'Fraunces', Georgia, serif;
+  --mono: 'DM Mono', monospace;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+* { box-sizing: border-box; }
+body { min-width: 320px; margin: 0; }
+button,a { font: inherit; }
+::selection { color: var(--ink); background: #f6d681; }
