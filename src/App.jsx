@@ -1,6 +1,6 @@
 import './App.css'
 
-const downloadUrl = 'https://drive.usercontent.google.com/download?id=1aMNEujfWKKccoeXmh042_FcSvrkFzVUQ&export=download&confirm=t'
+const downloadUrl = 'https://github.com/ashokram004/doclocker-launchpage/releases/download/1.0.0/SJK_Grammar.apk'
 
 function DownloadIcon() {
   return (
