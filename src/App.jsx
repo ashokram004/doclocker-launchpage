@@ -1,4 +1,6 @@
+import { useEffect } from 'react'
 import './App.css'
+import PrivacyPolicy from './PrivacyPolicy.jsx'
 
 const downloadUrl = 'https://github.com/ashokram004/doclocker-launchpage/releases/download/1.0.0/SJK_Grammar.apk'
 
@@ -20,6 +22,26 @@ function DownloadLink({ className = '' }) {
 }
 
 function App() {
+  const isPrivacyPolicy = window.location.pathname.replace(/\/+$/, '') === '/privacy-policy'
+
+  useEffect(() => {
+    if (!isPrivacyPolicy) return
+
+    const previousTitle = document.title
+    const description = document.querySelector('meta[name="description"]')
+    const previousDescription = description?.content
+
+    document.title = 'Privacy Policy | English Handbook'
+    description?.setAttribute('content', 'Read the English Handbook privacy policy, including details about information processing, Firebase, document storage, and contact information.')
+
+    return () => {
+      document.title = previousTitle
+      if (previousDescription !== undefined) description?.setAttribute('content', previousDescription)
+    }
+  }, [isPrivacyPolicy])
+
+  if (isPrivacyPolicy) return <PrivacyPolicy />
+
   return (
     <main>
       <header className="site-header">
@@ -30,6 +52,7 @@ function App() {
         <nav className="site-nav" aria-label="Main navigation">
           <a href="#inside">What's inside</a>
           <a href="#download">Get the app</a>
+          <a href="/privacy-policy">Privacy</a>
         </nav>
         <DownloadLink className="header-download" />
       </header>
@@ -109,6 +132,7 @@ function App() {
           <span className="brand-name">English Handbook</span>
         </a>
         <p>SJK's Handbook of English Proficiency</p>
+        <a className="footer-link" href="/privacy-policy">Privacy policy</a>
         <a className="footer-link" href={downloadUrl}>Android app <span aria-hidden="true">↗</span></a>
       </footer>
     </main>
