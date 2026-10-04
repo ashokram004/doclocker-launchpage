@@ -2,9 +2,9 @@ export default function PrivacyPolicy() {
   return (
     <>
       <header className="policy-header">
-        <a className="brand" href="/" aria-label="English Handbook home">
-          <span className="brand-mark" aria-hidden="true">EH</span>
-          <span className="brand-name">English Handbook</span>
+        <a className="brand" href="/" aria-label="SJK Handbook of English home">
+          <span className="brand-mark" aria-hidden="true">SJK</span>
+          <span className="brand-name">SJK Handbook of English</span>
         </a>
         <a className="policy-home-link" href="/">Back to home <span aria-hidden="true">↗</span></a>
       </header>
@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
           <p className="eyebrow"><span className="eyebrow-dot" /> YOUR INFORMATION, EXPLAINED</p>
           <h1>Privacy <em>Policy</em></h1>
           <p className="policy-summary">
-            English Handbook ("the App") provides authorized users with access to an educational and reference document. This policy explains what information the App processes and how it is used.
+            SJK Handbook of English ("the App") provides authorized users with access to an educational and reference document. This policy explains what information the App processes and how it is used.
           </p>
           <div className="policy-meta">
             <p><span>Effective date</span>October 4, 2026</p>
@@ -101,8 +101,8 @@ export default function PrivacyPolicy() {
       </main>
 
       <footer className="policy-footer">
-        <span>English Handbook</span>
-        <a href="/">Back to English Handbook home</a>
+        <span>SJK Handbook of English</span>
+        <a href="/">Back to SJK Handbook of English home</a>
       </footer>
     </>
   )

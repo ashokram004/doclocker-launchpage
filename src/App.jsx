@@ -31,8 +31,8 @@ function App() {
     const description = document.querySelector('meta[name="description"]')
     const previousDescription = description?.content
 
-    document.title = 'Privacy Policy | English Handbook'
-    description?.setAttribute('content', 'Read the English Handbook privacy policy, including details about information processing, Firebase, document storage, and contact information.')
+    document.title = 'Privacy Policy | SJK Handbook of English'
+    description?.setAttribute('content', 'Read the SJK Handbook of English privacy policy, including details about information processing, Firebase, document storage, and contact information.')
 
     return () => {
       document.title = previousTitle
@@ -45,9 +45,9 @@ function App() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="English Handbook home">
-          <span className="brand-mark" aria-hidden="true">EH</span>
-          <span className="brand-name">English Handbook</span>
+        <a className="brand" href="#top" aria-label="SJK Handbook of English home">
+          <span className="brand-mark" aria-hidden="true">SJK</span>
+          <span className="brand-name">SJK Handbook of English</span>
         </a>
         <nav className="site-nav" aria-label="Main navigation">
           <a href="#inside">What's inside</a>
@@ -115,7 +115,7 @@ function App() {
         <div className="download-copy">
           <p className="eyebrow">YOUR STUDY COMPANION IS READY</p>
           <h2>Take the next step<br />toward <em>your goal.</em></h2>
-          <p>Get the English Handbook app for Android and start learning with your book.</p>
+          <p>Get the SJK Handbook of English app for Android and start learning with your book.</p>
           <DownloadLink className="download-light" />
         </div>
         <div className="download-aside" aria-hidden="true">
@@ -128,8 +128,8 @@ function App() {
 
       <footer className="site-footer">
         <a className="brand" href="#top">
-          <span className="brand-mark" aria-hidden="true">EH</span>
-          <span className="brand-name">English Handbook</span>
+          <span className="brand-mark" aria-hidden="true">SJK</span>
+          <span className="brand-name">SJK Handbook of English</span>
         </a>
         <p>SJK's Handbook of English Proficiency</p>
         <a className="footer-link" href="/privacy-policy">Privacy policy</a>
